@@ -16,17 +16,17 @@
 					"fstextfile"
 				],
 				"extensions": [
-					"*.disemovie",
-					"*.dependencies",
-					"*.disednoborders",
-					"*.filelist",
-					"*.displayscheme",
-					"*.diseinfo",
-					"*.disescene",
-					"*.disescript",
-					"*.disepath",
-					"*.disemoves",
-					"*.disepreset"
+					".disemovie",
+					".dependencies",
+					".disednoborders",
+					".filelist",
+					".displayscheme",
+					".diseinfo",
+					".disescene",
+					".disescript",
+					".disepath",
+					".disemoves",
+					".disepreset"
 				],
 				"configuration": "./language-configuration.json"
 			}
