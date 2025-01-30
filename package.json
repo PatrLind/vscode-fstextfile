@@ -1,0 +1,42 @@
+{
+	"name": "fstextfile-syntax",
+	"publisher": "Tolotek AB",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "fstextfile",
+				"aliases": [
+					"fstextfile"
+				],
+				"extensions": [
+					"*.disemovie",
+					"*.dependencies",
+					"*.disednoborders",
+					"*.filelist",
+					"*.displayscheme",
+					"*.diseinfo",
+					"*.disescene",
+					"*.disescript",
+					"*.disepath",
+					"*.disemoves",
+					"*.disepreset"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "fstextfile",
+				"scopeName": "source.fstextfile",
+				"path": "./syntaxes/fstextfile.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"size": 3247
+	}
+}

@@ -1,0 +1,96 @@
+{
+    "name": "fstextfile (Dise)",
+    "scopeName": "source.fstextfile",
+    "patterns": [
+      { "include": "#chunks" },
+      { "include": "#keys" },
+      { "include": "#strings" },
+      { "include": "#numbers" },
+      { "include": "#uuids" }
+    ],
+  
+    "repository": {
+  
+      "chunks": {
+        "patterns": [
+          {
+            "name": "meta.chunk.fstextfile",
+            "begin": "^\\s*(\\w+)\\s*\\{\\s*$",
+            "beginCaptures": {
+              "1": {
+                "name": "entity.name.section.fstextfile"
+              }
+            },
+            "end": "^\\s*\\}\\s*$",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.section.braces.end.fstextfile"
+              }
+            },
+            "patterns": [
+              { "include": "#chunks" },
+              { "include": "#keys" },
+              { "include": "#strings" },
+              { "include": "#numbers" },
+              { "include": "#uuids" }
+            ]
+          },
+
+          {
+            "name": "entity.name.section.fstextfile",
+            "match": "^(\\s*)(\\w+)(\\s*)$"
+          },
+          {
+            "name": "meta.braces.fstextfile",
+            "begin": "^\\s*\\{\\s*$",
+            "end": "^\\s*\\}\\s*$",
+            "patterns": [
+              { "include": "#chunks" },
+              { "include": "#keys" },
+              { "include": "#strings" },
+              { "include": "#numbers" },
+              { "include": "#uuids" }
+            ]
+          }
+        ]
+      },
+  
+      "keys": {
+        "patterns": [
+          {
+            "name": "keyword.other.key.fstextfile",
+            "match": "^\\s*\\w+(?=\\s*=)"
+          }
+        ]
+      },
+  
+      "strings": {
+        "patterns": [
+          {
+            "name": "string.quoted.double.fstextfile",
+            "begin": "\"",
+            "end": "\""
+          }
+        ]
+      },
+  
+      "numbers": {
+        "patterns": [
+          {
+            "name": "constant.numeric.fstextfile",
+            "match": "\\b\\d+\\b"
+          }
+        ]
+      },
+  
+      "uuids": {
+        "patterns": [
+          {
+            "name": "constant.other.uuid.fstextfile",
+            "match": "\\{[0-9A-Fa-f-]{36}\\}"
+          }
+        ]
+      }
+    }
+  }
+  
