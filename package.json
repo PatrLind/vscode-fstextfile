@@ -2,6 +2,9 @@
 	"name": "fstextfile-syntax",
 	"publisher": "Tolotek AB",
 	"version": "0.1.0",
+	"repository": {
+		"url": "https://github.com/PatrLind/vscode-fstextfile"
+	},
 	"engines": {
 		"vscode": "^1.50.0"
 	},
